@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:7103/ -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.3.2];ionrangeslider[2.1.6];strftime[0.9.2];selectize[0.11.2];bootstrap-datepicker[1.6.4];font-awesome[5.3.1];bootstrap[3.3.7]</script>
+<script src="./---- Erick J. Pineda Amézquita ----_files/json2-min.js.descarga"></script>
+<script src="./---- Erick J. Pineda Amézquita ----_files/jquery.min.js.descarga"></script>
+<link href="./---- Erick J. Pineda Amézquita ----_files/shiny.css" rel="stylesheet">
+<script src="./---- Erick J. Pineda Amézquita ----_files/shiny.min.js.descarga"></script>
+<link href="./---- Erick J. Pineda Amézquita ----_files/ion.rangeSlider.css" rel="stylesheet">
+<link href="./---- Erick J. Pineda Amézquita ----_files/ion.rangeSlider.skinShiny.css" rel="stylesheet">
+<script src="./---- Erick J. Pineda Amézquita ----_files/ion.rangeSlider.min.js.descarga"></script>
+<script src="./---- Erick J. Pineda Amézquita ----_files/strftime-min.js.descarga"></script>
+<link href="./---- Erick J. Pineda Amézquita ----_files/selectize.bootstrap3.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="shared/selectize/js/es5-shim.min.js"></script>
+<![endif]-->
+<script src="./---- Erick J. Pineda Amézquita ----_files/selectize.min.js.descarga"></script>
+<link href="./---- Erick J. Pineda Amézquita ----_files/bootstrap-datepicker3.min.css" rel="stylesheet">
+<script src="./---- Erick J. Pineda Amézquita ----_files/bootstrap-datepicker.min.js.descarga"></script>
+<script>
+(function() {
+  var datepicker = $.fn.datepicker.noConflict();
+  $.fn.bsDatepicker = datepicker;
+})();
+</script>
+<link href="./---- Erick J. Pineda Amézquita ----_files/all.min.css" rel="stylesheet">
+<link href="./---- Erick J. Pineda Amézquita ----_files/v4-shims.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./---- Erick J. Pineda Amézquita ----_files/bootstrap.min.css" rel="stylesheet">
+<script src="./---- Erick J. Pineda Amézquita ----_files/bootstrap.min.js.descarga"></script>
+<script src="./---- Erick J. Pineda Amézquita ----_files/html5shiv.min.js.descarga"></script>
+<script src="./---- Erick J. Pineda Amézquita ----_files/respond.min.js.descarga"></script>  <link rel="stylesheet" type="text/css" href="./---- Erick J. Pineda Amézquita ----_files/cerulean.min.css">
+  <title>---- Erick J. Pineda Amézquita ---- </title>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h2>---- Erick J. Pineda Amézquita ---- </h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <form class="well">
+          <div class="form-group shiny-input-container">
+            <label class="control-label" for="ui_sliderInput">Number of bins:</label>
+            <span class="irs js-irs-0  irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: visible;">1</span><span class="irs-max" style="visibility: visible;">50</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 56.2836%;">30</span></span><span class="irs-grid" style="width: 94.2105%; left: 2.79474%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -1.44737%;">1</span><span class="irs-grid-pol small" style="left: 6.802721088435375%"></span><span class="irs-grid-pol small" style="left: 3.4013605442176873%"></span><span class="irs-grid-pol" style="left: 10.204081632653061%"></span><span class="irs-grid-text js-grid-text-1" style="left: 10.2041%; visibility: visible; margin-left: -1.44737%;">6</span><span class="irs-grid-pol small" style="left: 17.006802721088434%"></span><span class="irs-grid-pol small" style="left: 13.60544217687075%"></span><span class="irs-grid-pol" style="left: 20.408163265306122%"></span><span class="irs-grid-text js-grid-text-2" style="left: 20.4082%; visibility: visible; margin-left: -1.97368%;">11</span><span class="irs-grid-pol small" style="left: 27.210884353741495%"></span><span class="irs-grid-pol small" style="left: 23.80952380952381%"></span><span class="irs-grid-pol" style="left: 30.612244897959183%"></span><span class="irs-grid-text js-grid-text-3" style="left: 30.6122%; visibility: visible; margin-left: -2.23684%;">16</span><span class="irs-grid-pol small" style="left: 37.414965986394556%"></span><span class="irs-grid-pol small" style="left: 34.01360544217687%"></span><span class="irs-grid-pol" style="left: 40.816326530612244%"></span><span class="irs-grid-text js-grid-text-4" style="left: 40.8163%; margin-left: -2.10526%;">21</span><span class="irs-grid-pol small" style="left: 47.61904761904761%"></span><span class="irs-grid-pol small" style="left: 44.21768707482993%"></span><span class="irs-grid-pol" style="left: 51.0204081632653%"></span><span class="irs-grid-text js-grid-text-5" style="left: 51.0204%; visibility: visible; margin-left: -2.23684%;">26</span><span class="irs-grid-pol small" style="left: 57.82312925170068%"></span><span class="irs-grid-pol small" style="left: 54.42176870748299%"></span><span class="irs-grid-pol" style="left: 61.224489795918366%"></span><span class="irs-grid-text js-grid-text-6" style="left: 61.2245%; visibility: visible; margin-left: -2.10526%;">31</span><span class="irs-grid-pol small" style="left: 68.02721088435374%"></span><span class="irs-grid-pol small" style="left: 64.62585034013605%"></span><span class="irs-grid-pol" style="left: 71.42857142857143%"></span><span class="irs-grid-text js-grid-text-7" style="left: 71.4286%; visibility: visible; margin-left: -2.10526%;">36</span><span class="irs-grid-pol small" style="left: 78.2312925170068%"></span><span class="irs-grid-pol small" style="left: 74.82993197278911%"></span><span class="irs-grid-pol" style="left: 81.63265306122449%"></span><span class="irs-grid-text js-grid-text-8" style="left: 81.6327%; margin-left: -2.10526%;">41</span><span class="irs-grid-pol small" style="left: 88.43537414965986%"></span><span class="irs-grid-pol small" style="left: 85.03401360544217%"></span><span class="irs-grid-pol" style="left: 91.83673469387755%"></span><span class="irs-grid-text js-grid-text-9" style="left: 91.8367%; visibility: visible; margin-left: -2.10526%;">46</span><span class="irs-grid-pol small" style="left: 97.27891156462584%"></span><span class="irs-grid-pol small" style="left: 94.5578231292517%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-10" style="left: 100%; visibility: visible; margin-left: -2.10526%;">50</span></span><span class="irs-bar" style="left: 2.89474%; width: 55.7573%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 55.7573%;"></span></span><input class="js-range-slider irs-hidden-input shiny-bound-input" id="ui_sliderInput" data-min="1" data-max="50" data-from="30" data-step="1" data-grid="true" data-grid-num="9.8" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-data-type="number" tabindex="-1" readonly="">
+            <div class="slider-animate-container">
+              <a href="http://127.0.0.1:7103/#" class="slider-animate-button" data-target-id="ui_sliderInput" data-interval="1000" data-loop="FALSE">
+                <span class="play">
+                  <i class="glyphicon glyphicon-play"></i>
+                </span>
+                <span class="pause">
+                  <i class="glyphicon glyphicon-pause"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="form-group shiny-input-container">
+            <label class="control-label" for="range">Range:</label>
+            <span class="irs js-irs-1  irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: visible;">1</span><span class="irs-max" style="visibility: visible;">1,000</span><span class="irs-from" style="visibility: visible; left: 18.5035%;">200</span><span class="irs-to" style="visibility: visible; left: 46.795%;">500</span><span class="irs-single" style="visibility: hidden; left: 27.9124%;">200 — 500</span></span><span class="irs-grid" style="width: 94.2105%; left: 2.79474%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -1.44737%;">1</span><span class="irs-grid-pol small" style="left: 6.673340006673341%"></span><span class="irs-grid-pol small" style="left: 3.3366700033366703%"></span><span class="irs-grid-pol" style="left: 10.01001001001001%"></span><span class="irs-grid-text js-grid-text-1" style="left: 10.01%; visibility: visible; margin-left: -2.76316%;">101</span><span class="irs-grid-pol small" style="left: 16.68335001668335%"></span><span class="irs-grid-pol small" style="left: 13.346680013346681%"></span><span class="irs-grid-pol" style="left: 20.02002002002002%"></span><span class="irs-grid-text js-grid-text-2" style="left: 20.02%; visibility: visible; margin-left: -2.76316%;">201</span><span class="irs-grid-pol small" style="left: 26.69336002669336%"></span><span class="irs-grid-pol small" style="left: 23.35669002335669%"></span><span class="irs-grid-pol" style="left: 30.03003003003003%"></span><span class="irs-grid-text js-grid-text-3" style="left: 30.03%; visibility: visible; margin-left: -2.76316%;">301</span><span class="irs-grid-pol small" style="left: 36.70337003670337%"></span><span class="irs-grid-pol small" style="left: 33.3667000333667%"></span><span class="irs-grid-pol" style="left: 40.04004004004004%"></span><span class="irs-grid-text js-grid-text-4" style="left: 40.04%; margin-left: -2.76316%;">401</span><span class="irs-grid-pol small" style="left: 46.713380046713375%"></span><span class="irs-grid-pol small" style="left: 43.37671004337671%"></span><span class="irs-grid-pol" style="left: 50.05005005005005%"></span><span class="irs-grid-text js-grid-text-5" style="left: 50.0501%; visibility: visible; margin-left: -2.76316%;">501</span><span class="irs-grid-pol small" style="left: 56.72339005672339%"></span><span class="irs-grid-pol small" style="left: 53.38672005338672%"></span><span class="irs-grid-pol" style="left: 60.06006006006006%"></span><span class="irs-grid-text js-grid-text-6" style="left: 60.0601%; visibility: visible; margin-left: -2.76316%;">601</span><span class="irs-grid-pol small" style="left: 66.7334000667334%"></span><span class="irs-grid-pol small" style="left: 63.39673006339673%"></span><span class="irs-grid-pol" style="left: 70.07007007007007%"></span><span class="irs-grid-text js-grid-text-7" style="left: 70.0701%; visibility: visible; margin-left: -2.76316%;">701</span><span class="irs-grid-pol small" style="left: 76.74341007674342%"></span><span class="irs-grid-pol small" style="left: 73.40674007340674%"></span><span class="irs-grid-pol" style="left: 80.08008008008008%"></span><span class="irs-grid-text js-grid-text-8" style="left: 80.0801%; margin-left: -2.76316%;">801</span><span class="irs-grid-pol small" style="left: 86.75342008675342%"></span><span class="irs-grid-pol small" style="left: 83.41675008341674%"></span><span class="irs-grid-pol" style="left: 90.09009009009009%"></span><span class="irs-grid-text js-grid-text-9" style="left: 90.0901%; visibility: visible; margin-left: -2.76316%;">901</span><span class="irs-grid-pol small" style="left: 96.69669669669669%"></span><span class="irs-grid-pol small" style="left: 93.3933933933934%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-10" style="left: 100%; visibility: visible; margin-left: -3.68421%;">1,000</span></span><span class="irs-bar" style="cursor: ew-resize; left: 21.6614%; width: 28.2914%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 18.7667%;"></span><span class="irs-slider to type_last" style="left: 47.0581%;"></span></span><input class="js-range-slider irs-hidden-input shiny-bound-input" id="range" data-type="double" data-min="1" data-max="1000" data-from="200" data-to="500" data-step="1" data-grid="true" data-grid-num="9.99" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-drag-interval="true" data-data-type="number" tabindex="-1" readonly="">
+          </div>
+          <div class="form-group shiny-input-container">
+            <label class="control-label" for="ui_lista-selectized">Variable:</label>
+            <div>
+              <select id="ui_lista" tabindex="-1" class="selectized shiny-bound-input" style="display: none;"><option value="Galaxias" selected="selected">Galaxias</option></select><div class="selectize-control single"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Galaxias">Galaxias</div><input type="text" autocomplete="off" tabindex="" id="ui_lista-selectized" class="shiny-bound-input" style="width: 4px;"></div><div class="selectize-dropdown single" style="display: none;"><div class="selectize-dropdown-content"></div></div></div>
+              <script type="application/json" data-for="ui_lista" data-nonempty="">{}</script>
+            </div>
+          </div>
+          <div class="form-group shiny-input-container">
+            <label class="control-label" for="ui_selectizeInput-selectized">Seleccione modelos carros:</label>
+            <div>
+              <select id="ui_selectizeInput" class="form-control selectized shiny-bound-input" multiple="multiple" tabindex="-1" style="display: none;"><option value="Camaro Z28" selected="selected">Camaro Z28</option></select><div class="selectize-control form-control multi"><div class="selectize-input items not-full has-options has-items"><div class="item" data-value="Camaro Z28">Camaro Z28</div><input type="text" autocomplete="off" tabindex="" id="ui_selectizeInput-selectized" class="shiny-bound-input" style="width: 4px;"></div><div class="selectize-dropdown multi form-control" style="display: none;"><div class="selectize-dropdown-content"></div></div></div>
+              <script type="application/json" data-for="ui_selectizeInput">{}</script>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div id="ui_dateSimple" class="shiny-date-input form-group shiny-input-container shiny-bound-input">
+            <label class="control-label" for="ui_dateSimple">Ingresar Fecha:</label>
+            <input type="text" class="form-control" data-date-language="en" data-date-week-start="0" data-date-format="yyyy-mm-dd" data-date-start-view="month" data-initial-date="2012-03-19" data-date-autoclose="true" data-date-dates-disabled="null" data-date-days-of-week-disabled="null">
+          </div>
+          <div id="ui_dateSimpleMultiple" class="shiny-date-range-input form-group shiny-input-container shiny-bound-input">
+            <label class="control-label" for="ui_dateSimpleMultiple">Escoger un rango de fechas, tomar en cuenta
+                                   que tiene hasta 15 dias</label>
+            <div class="input-daterange input-group">
+              <input class="input-sm form-control" type="text" data-date-language="fr" data-date-week-start="1" data-date-format="dd/mm/yy" data-date-start-view="year" data-min-date="2020-09-28" data-max-date="2020-10-18" data-initial-date="2020-10-05" data-date-autoclose="true">
+              <span class="input-group-addon"> - </span>
+              <input class="input-sm form-control" type="text" data-date-language="fr" data-date-week-start="1" data-date-format="dd/mm/yy" data-date-start-view="year" data-min-date="2020-09-28" data-max-date="2020-10-18" data-initial-date="2020-10-11" data-date-autoclose="true">
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="form-group shiny-input-container">
+            <label for="ui_counts">Conteo de unidades:</label>
+            <input id="ui_counts" type="number" class="form-control shiny-bound-input" value="10" min="1" max="100">
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="form-group shiny-input-container">
+            <div class="checkbox">
+              <label>
+                <input id="ui_checkboxOne" type="checkbox" class="shiny-bound-input">
+                <span>Seleccione si verdadero</span>
+              </label>
+            </div>
+          </div>
+          <div id="ui_checkboxGroupInput" class="form-group shiny-input-checkboxgroup shiny-input-container shiny-bound-input">
+            <label class="control-label" for="ui_checkboxGroupInput">Selecciona uno o mas items del listado:</label>
+            <div class="shiny-options-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="ui_checkboxGroupInput" value="cog">
+                  <span><i class="fa fa-cog"></i></span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="ui_checkboxGroupInput" value="bug">
+                  <span><i class="fa fa-bug"></i></span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="ui_checkboxGroupInput" value="camera">
+                  <span><i class="fa fa-camera"></i></span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="ui_checkboxGroupInput" value="at">
+                  <span><i class="fa fa-at"></i></span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="ui_checkboxGroupInput" value="bell">
+                  <span><i class="fa fa-bell"></i></span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="ui_checkboxGroupInput" value="bed">
+                  <span><i class="fa fa-bed"></i></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div id="ui_radioButtons" class="form-group shiny-input-radiogroup shiny-input-container shiny-bound-input">
+            <label class="control-label" for="ui_radioButtons">Seleccione un objeto:</label>
+            <div class="shiny-options-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="ui_radioButtons" value="Solo Icono" checked="checked">
+                  <span><i class="fa fa-calendar"></i></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="ui_radioButtons" value="Con HTML">
+                  <span><p style="color:blue;">Texto con formato HTML</p></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="ui_radioButtons" value="Texto Plano">
+                  <span>Texto normal</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group shiny-input-container">
+            <label for="ui_textArea">Caption</label>
+            <textarea id="ui_textArea" class="form-control shiny-bound-input">Ingresar contenido de la investigacion</textarea>
+          </div>
+          <br>
+          <button id="ui_actionButton" type="button" class="btn btn-default action-button shiny-bound-input">Sumar +1</button>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <a class="action-button btn-info shiny-bound-input" href="http://127.0.0.1:7103/#" id="ui_infoLink">Ingresar a pagina por URL</a>
+        </form>
+      </div>
+      <div class="col-sm-8">
+        <h1>Slider Input Sencillo:</h1>
+        <pre id="patito" class="shiny-text-output noplaceholder shiny-bound-output">[1] 30</pre>
+        <h1>Slider Input Rango:</h1>
+        <pre id="srv_rango" class="shiny-text-output noplaceholder shiny-bound-output">[1] 200 500</pre>
+        <h1>Select input</h1>
+        <pre id="srv_lista" class="shiny-text-output noplaceholder shiny-bound-output">[1] "Galaxias"</pre>
+        <h1>Select input Multiple</h1>
+        <pre id="srv_listaMultiple" class="shiny-text-output noplaceholder shiny-bound-output">[1] "Camaro Z28"</pre>
+        <h1>Fecha</h1>
+        <pre id="srv_fecha" class="shiny-text-output noplaceholder shiny-bound-output">[1] "2012-03-19"</pre>
+        <h1>Fecha Multiple</h1>
+        <pre id="srv_fechaMultiple" class="shiny-text-output noplaceholder shiny-bound-output">[1] "2020-10-05  to   2020-10-11"</pre>
+        <h1>Numeric Input</h1>
+        <pre id="srv_numeric" class="shiny-text-output noplaceholder shiny-bound-output">10</pre>
+        <h1>Validar Verdadero</h1>
+        <pre id="srv_ui_checkboxOne" class="shiny-text-output noplaceholder shiny-bound-output">FALSE</pre>
+        <h2>Grupo de checks</h2>
+        <pre id="srv_checkboxGroupInput" class="shiny-text-output noplaceholder shiny-bound-output"></pre>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Radio Buttons</h1>
+        <pre id="srv_radioButtons" class="shiny-text-output noplaceholder shiny-bound-output">Solo Icono</pre>
+        <h2>Parrafo</h2>
+        <pre id="srv_textArea" class="shiny-text-output noplaceholder shiny-bound-output">Ingresar contenido de la investigacion</pre>
+        <h2>Cantidad de clicks en boton</h2>
+        <pre id="srv_actionButton" class="shiny-text-output noplaceholder shiny-bound-output">0</pre>
+        <h2>Cantidad de clicks en Link</h2>
+        <pre id="srv_infoLink" class="shiny-text-output noplaceholder shiny-bound-output">0</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+</body></html>

@@ -47,14 +47,17 @@ shinyServer(function(input, output) {
   })
   
   output$srv_fechaMultiple <- renderPrint({
-    
     fecha <- paste(input$ui_dateSimpleMultiple[1]," to  ",input$ui_dateSimpleMultiple[2])
     fecha
-    
+  })
+  
+  output$srv_checkboxGroupInput <- renderPrint({
+    chechGr <- paste(input$checkboxGroupInput[1]," to  ",input$checkboxGroupInput[2])
+    chechGr
   })
   
   
-  output$srv_numeric <- renderText({ input$obs })
+  output$srv_numeric <- renderText({ input$ui_counts })
   
   
   output$srv_ui_checkboxOne<- renderText({
@@ -62,17 +65,24 @@ shinyServer(function(input, output) {
   })
   
   
-  output$text_io <- renderText({
-    input$text_input
+  output$srv_radioButtons<- renderText({
+    input$ui_radioButtons
   })
-  output$text_area_io <- renderText({
-    input$caption
+  
+  
+  
+  output$srv_checkboxGroupInput <- renderText({
+    input$ui_checkboxGroupInput
   })
-  output$action_bt_io <- renderText({
-    input$action
+  
+  output$srv_textArea <- renderText({
+    input$ui_textArea
   })
-  output$action_link_io <- renderText({
-    input$infoLink
+  output$srv_actionButton <- renderText({
+    input$ui_actionButton
+  })
+  output$srv_infoLink <- renderText({
+    input$ui_infoLink
   })
   
   

@@ -5,92 +5,96 @@
 ################################################
 
 
-
 library(shiny)
+library(shinythemes)
 
 
-shinyUI(fluidPage(
+shinyUI(fluidPage(theme = shinytheme("cerulean"),
   
   
-  titlePanel("Old Faithful Geyser Data"),
+  titlePanel("---- Erick J. Pineda Amézquita ---- "),
+  h3("Ojo: Tiene activo el boton de Reprocesar, hacer click para ver resultados"),
+  ### Comentar en caso se desea dejar fluir la pagina ###
+  submitButton(text = "Reprocesar"),
   
-  # Sidebar with a slider input for number of bins
   sidebarLayout(
-    
-    
-    
+
     sidebarPanel(
       sliderInput("ui_sliderInput",
                   "Number of bins:",
                   min = 1,
                   max = 50,
-                  value = 30)
+                  value = 30, animate = TRUE)
       ,
-      # Specification of range within an interval
+      
+      
+      ##Rango
       sliderInput("range", "Range:",
                   min = 1, max = 1000, value = c(200,500)),
       
-      selectInput("ui_lista", "Variable:",
-                  c("Cylinders",
-                    "Transmission",
-                    "Gears"))
+      br(),
+      selectInput("ui_lista", "Lista desplegable:",
+                  c("Galaxias",
+                    "Planetas",
+                    "Estrellas"))
       
       ,
-      
-      selectizeInput('ui_selectizeInput',"seleccione carros:",
+      br(),
+      selectizeInput('ui_selectizeInput',"Seleccione modelos carros:",
                      choices = rownames(mtcars),
                      selected = "Camaro Z28",
                      multiple = TRUE),
       
-      dateInput("ui_dateSimple", "Date:", value = "2012-02-29"),
+      br(),br(),br(),
+      dateInput("ui_dateSimple", "Ingresar Fecha:", value = "2012-03-19"),
       
       dateRangeInput('ui_dateSimpleMultiple',
-                     label = paste('Date range input 2: range is limited,',
-                                   'dd/mm/yy, language: fr, week starts on day 1 (Monday),',
-                                   'separator is "-", start view is year'),
+                     label = paste('Escoger un rango de fechas, tomar en cuenta
+                                   que tiene hasta 15 dias'),
                      start = Sys.Date() - 3, end = Sys.Date() + 3,
                      min = Sys.Date() - 10, max = Sys.Date() + 10,
                      separator = " - ", format = "dd/mm/yy",
                      startview = 'year', language = 'fr', weekstart = 1
       )
       ,
+      br(),br(),
+      numericInput("ui_counts", "Conteo de unidades:", 10, min = 1, max = 100),
       
+      
+      br(),br(),
       checkboxInput("ui_checkboxOne", "Seleccione si verdadero",value=FALSE),
+      br(),br(),
       
-      checkboxGroupInput("icons", "Choose icons:",
+      checkboxGroupInput("ui_checkboxGroupInput", "Selecciona uno o mas items del listado:",
                          choiceNames =
-                           list(icon("calendar"), icon("bed"),
-                                icon("cog"), icon("bug")),
+                           list(icon("cog"), icon("bug"),icon("camera"),icon("at"),
+                                icon("bell"), icon("bed")),
                          choiceValues =
-                           list("calendar", "bed", "cog", "bug")
+                           list("cog", "bug", "camera", "at","bell","bed")
       ),
-      
-      radioButtons("rb", "Choose one:",
+      br(),
+      radioButtons("ui_radioButtons", "Seleccione un objeto:",
                    choiceNames = list(
                      icon("calendar"),
-                     HTML("<p style='color:red;'>Red Text</p>"),
-                     "Normal text"
+                     HTML("<p style='color:blue;'>Texto con formato HTML</p>"),
+                     "Texto normal"
                    ),
                    choiceValues = list(
-                     "icon", "html", "text"
+                     "Solo Icono", "Con HTML", "Texto Plano"
                    )),
       
-      
-      numericInput("obs", "Observations:", 10, min = 1, max = 100),
-      
+   
       
       
       
       
-      
-      
-      textAreaInput("caption", "Caption", "Data Summary"),
-      
-      actionButton("action", "Button"),
-      actionLink("infoLink", "Information Link", class = "btn-info")
-      
-      # , submitButton(text = "Reprocesar")
-      
+      textAreaInput("ui_textArea", "Caption", "Ingresar contenido de la investigacion"),
+      br(),
+      actionButton("ui_actionButton", "Sumar +1"),
+      br(),br(),br(),br(),br(),
+      actionLink("ui_infoLink", "Ingresar a pagina por URL", class = "btn-info"),
+      br(),br(),
+      submitButton(text = "Reprocesar")
       
       
       
@@ -120,20 +124,21 @@ shinyUI(fluidPage(
       
       h1("Numeric Input"),
       verbatimTextOutput("srv_numeric"),
-      
-      h1("Check one"),
+      h1("Validar Verdadero"),
       verbatimTextOutput("srv_ui_checkboxOne")
-      
       ,
+      h2("Grupo de checks"),
+      verbatimTextOutput("srv_checkboxGroupInput"),
+      br(),br(),br(),br(),br(),br(),
+      h1("Radio Buttons"),
+      verbatimTextOutput("srv_radioButtons"),
       
-      h2("Texto"),
-      verbatimTextOutput("text_io"),
       h2("Parrafo"),
-      verbatimTextOutput("text_area_io"),
-      h2("Action button"),
-      verbatimTextOutput("action_bt_io"),
-      h2("Action link"),
-      verbatimTextOutput("action_link_io")
+      verbatimTextOutput("srv_textArea"),
+      h2("Cantidad de clicks en boton"),
+      verbatimTextOutput("srv_actionButton"),
+      h2("Cantidad de clicks en Link"),
+      verbatimTextOutput("srv_infoLink")
       
       
     )
